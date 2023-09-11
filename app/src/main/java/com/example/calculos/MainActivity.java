@@ -28,5 +28,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(tela2);
             }
         });
+
+        Button btnImc = findViewById(R.id.btnImc);
+        btnImc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent tela3 = new Intent(getApplicationContext(), Tela3.class);
+                startActivity(tela3);
+            }
+        });
     }
 }
