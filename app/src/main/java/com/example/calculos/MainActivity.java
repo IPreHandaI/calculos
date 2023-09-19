@@ -37,5 +37,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(tela3);
             }
         });
+
+        Button btnNomeSobrenomeOutraTela = findViewById(R.id.btnNomeSobrenomeOutraTela);
+        btnNomeSobrenomeOutraTela.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent tela5 = new Intent(getApplicationContext(), Tela5.class);
+                startActivity(tela5);
+            }
+        });
     }
 }
